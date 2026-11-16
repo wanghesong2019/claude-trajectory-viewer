@@ -9,8 +9,8 @@
 <body>
 <header class="bar">
   <div class="mode-toggle">
-    <label><input type="radio" name="mode" value="live" checked> live</label>
-    <label><input type="radio" name="mode" value="replay"> replay</label>
+    <label><input type="radio" name="mode" value="live" checked> 实时</label>
+    <label><input type="radio" name="mode" value="replay"> 回放</label>
   </div>
 
   <div id="liveFields" class="fields">
@@ -20,13 +20,13 @@
   </div>
 
   <div id="replayFields" class="fields" hidden>
-    <select id="sampleSelect"><option value="">加载样例…</option></select>
+    <select id="sampleSelect"><option value="">加载示例…</option></select>
     <input id="replayFile" class="cwd" placeholder="events.jsonl 路径" />
   </div>
 
-  <button id="run">Run</button>
-  <button id="stop" hidden>■ 停止</button>
-  <span id="status" class="status">idle</span>
+  <button id="run">运行</button>
+  <button id="stop" hidden>停止</button>
+  <span id="status" class="status">就绪</span>
 </header>
 
 <main class="layout">

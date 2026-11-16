@@ -271,8 +271,9 @@ function toggleFold(el, fullText) {
 }
 
 function scrollBottom() { trajectory.scrollTop = trajectory.scrollHeight; }
+const STATUS_TEXT = { idle: '就绪', running: '运行中', finished: '完成', failed: '失败', stopped: '已停止' };
 function setStatus(s) {
-  status.textContent = s;
+  status.textContent = STATUS_TEXT[s] || s;
   status.className = 'status ' + s;
 }
 
