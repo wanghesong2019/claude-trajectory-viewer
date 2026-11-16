@@ -4,7 +4,7 @@
 
 > agent 可观测性工具：**"你优化不了你看不到的东西。"**
 
-![claude-trajectory-viewer 效果演示](docs/效果演示.gif)
+![claude-trajectory-viewer 效果演示](docs/demo.gif)
 
 ## 功能
 
