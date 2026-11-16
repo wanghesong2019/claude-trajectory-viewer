@@ -4,7 +4,7 @@
 
 > agent 可观测性工具：**"你优化不了你看不到的东西。"**
 
-![claude-trajectory-viewer 主界面：subagent 树形嵌套 + 大纲 + 成本历史](docs/screenshot-subagent.png)
+![claude-trajectory-viewer 效果演示](docs/效果演示.gif)
 
 ## 功能
 
