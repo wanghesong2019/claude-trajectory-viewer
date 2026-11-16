@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Claude Trajectory Viewer</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="bar">
+  <div class="mode-toggle">
+    <label><input type="radio" name="mode" value="live" checked> live</label>
+    <label><input type="radio" name="mode" value="replay"> replay</label>
+  </div>
+
+  <div id="liveFields" class="fields">
+    <input id="cwd" class="cwd" placeholder="工作目录，如 D:\work\demo" />
+    <input id="prompt" placeholder="输入 prompt…" />
+    <label class="resume"><input type="checkbox" id="resume" /> 继续会话</label>
+  </div>
+
+  <div id="replayFields" class="fields" hidden>
+    <select id="sampleSelect"><option value="">加载样例…</option></select>
+    <input id="replayFile" class="cwd" placeholder="events.jsonl 路径" />
+  </div>
+
+  <button id="run">Run</button>
+  <button id="stop" hidden>■ 停止</button>
+  <span id="status" class="status">idle</span>
+</header>
+
+<main class="layout">
+  <nav id="outline" class="outline"><div class="outline-title">大纲</div></nav>
+  <section id="trajectory" class="trajectory"></section>
+</main>
+<footer id="numbers" class="numbers"></footer>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

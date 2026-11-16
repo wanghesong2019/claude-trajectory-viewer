@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+.chrome-tmp/
+*.pyc
+build/
+dist/
